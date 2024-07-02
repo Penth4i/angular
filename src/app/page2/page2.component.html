@@ -1,0 +1,36 @@
+<div class="container">
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Babybexst</mat-card-title>
+            <mat-card-subtitle>1cat</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-scenery-smartphone-wallpaper-free-photo.jpg?w=2210&quality=70">
+        <mat-card-content>
+            <p class="input1">
+                <mat-form-field appearance="outline">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput placeholder="Placeholder" [(ngModel)]="full_name">
+                    <mat-icon matSuffix>pets</mat-icon>
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+            </p>
+            <p class="input2">
+                <mat-form-field appearance="outline">
+                    <mat-label>Full Number</mat-label>
+                    <input matInput placeholder="Placeholder" [(ngModel)]="phone">
+                    <mat-icon matSuffix>pets</mat-icon>
+                    <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+            </p>
+            <section>
+                <div class="example-button-row">
+                    <button id="Submit" mat-flat-button color="primary" (click)="click_submit()">Submit</button>
+                    <button id="Reset" mat-flat-button color="warn">Reset</button>
+                </div>
+            </section>
+            <p class="output1">{{output1}}</p>
+            <p class="output2">{{output2}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
